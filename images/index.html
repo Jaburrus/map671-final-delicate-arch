@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Topography of Delicate Arch, Utah</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+        /* UK Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #c7c9c8;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #3d3d3d;
+            font-size: 1.1em;
+
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            font-style: italic;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #63666a;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #15397f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #63666a;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #3d3d3d;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "Delicate Arch is a natural arch located in the Arches National Park in Utah. The arch stands around 52 feet high, and is one of the park's many natural occurring landmarks.";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="images/delicate_arch_small.png"></iframe>
+    <section>
+        <a href='images/delicate_arch_large.png' class="linkbox">Download High Resolution Map</a>
+
+       
+        <h1>Delicate Arch, Utah</h1>
+        <h2>Terrain Analysis Using DEM, Hillshade, and Contours</h2>
+        <p><strong>Joyia Burrus</strong> | MAP 671 Final Project</p>
+        <div class="row">
+            <div class="first-column">
+                <p>
+                    This project explores the terrain around the Delicate Arch. The DEM data came from the USGS (https://www.usgs.gov/us-board-on-geographic-names). The contours and hillshades were created in QGIS, with the goal being to visualize the surrounding topography.
+                </p>
+                <h3>Tools used in this project</h3>
+                <ul>
+                    <li>QGIS</li>
+                    <li>USGS DEM Data</li>
+                    <li>GDAL and QGIS to convert raster elevation units and create contours.</li>
+                </ul>
+
+
+                <hr>
+               
+                </p>
+
+
+            </div>
+            <div class="column">
+                    title="Gray&#x27;s Arch">
+                <div class="linkbox"></div>
+            </div>
+        </div>
+
+
+        <hr>
+        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
+        <a href="https://uky-gis.github.io">
+            <img src="logo-color-400px.png" alt="Uinversity of Kentucky Geography"></a>
+    </section>
+</body>
+</html>
